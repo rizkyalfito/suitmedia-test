@@ -4,7 +4,7 @@ const Card = ({ title, imageUrl, date }) => {
   const formattedDate = new Date(date).toLocaleDateString();
 
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-lg">
+    <div className="bg-white rounded-lg overflow-hidden shadow-lg ">
       {imageUrl && (
         <img src={imageUrl} alt={title} className="w-full h-64 object-cover object-center" />
       )}

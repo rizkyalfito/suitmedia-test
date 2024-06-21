@@ -57,13 +57,13 @@ const Header = () => {
               <span className="text-2xl">&#9776;</span>
             </button>
             {menuOpen && (
-              <ul className="absolute right-0 mt-2 py-2 w-48 bg-white rounded-lg shadow-xl">
+              <ul className="absolute right-0 mt-2 py-2 w-48 bg-orange-500 text-white rounded-lg shadow-xl">
                 {['work', 'about', 'services', 'ideas', 'careers', 'contact'].map((item) => (
                   <li key={item}>
                     <NavLink
                       to={`/${item}`}
                       className={({ isActive }) =>
-                        isActive ? 'font-bold block px-4 py-2' : 'hover:text-gray-800 block px-4 py-2'
+                        isActive ? 'font-bold block px-4 py-2' : 'block px-4 py-2 hover:text-gray-300'
                       }
                       onClick={() => setMenuOpen(false)}
                     >
