@@ -1,7 +1,8 @@
+import dayjs from 'dayjs';
 import PropTypes from 'prop-types';
 
 const Card = ({ title, imageUrl, date }) => {
-  const formattedDate = new Date(date).toLocaleDateString();
+  const formattedDate = dayjs(new Date(date).toISOString()).format('DD MMMM YYYY');
 
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-lg ">

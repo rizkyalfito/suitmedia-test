@@ -34,7 +34,7 @@ const Header = () => {
   return (
     <header className={`fixed top-0 w-full z-50 transition-transform duration-300 ${show ? 'translate-y-0' : '-translate-y-full'} bg-orange-500 text-white bg-opacity-90 shadow`}>
       <div className="container mx-auto px-6 py-3 flex justify-between items-center h-full">
-        <div className="text-lg font-bold">Logo</div>
+        <div className="text-lg font-bold">Suitmedia</div>
         <nav>
           <div className="hidden md:block ">
             <ul className="flex space-x-6 ">
